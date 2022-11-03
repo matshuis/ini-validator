@@ -65,9 +65,18 @@ namespace IniValidator
         private static string[] GetFilesByExtensions(string dir, params string[] extensions)
         {
             string[] files = { };
-            foreach (var ex in extensions)
+            foreach (var extension in extensions)
             {
-                var extensionFiles = Directory.GetFiles(dir, ex, SearchOption.AllDirectories);
+                string[] extensionFiles = { };
+                try
+                {
+                    extensionFiles = Directory.GetFiles(dir, extension, SearchOption.AllDirectories);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Can not get directory " + dir + " is the syntax right? " + ex.Message);
+                    continue;
+                }
                 files = files.Concat(extensionFiles).ToArray();
             }
 
