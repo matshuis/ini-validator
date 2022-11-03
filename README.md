@@ -1,1 +1,1 @@
-# ini-validator
+This command line app can be use to validate ini file types. It parses the files and creates an html output report with te test results.

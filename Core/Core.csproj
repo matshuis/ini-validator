@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net461</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<PlatformTarget>x64</PlatformTarget>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Ini.Validator.Core</RootNamespace>
+		<AssemblyName>ini-validator-core</AssemblyName>
+		<Platforms>x64</Platforms>
+		<WarningLevel>4</WarningLevel>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<Platforms>x64</Platforms>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<ErrorReport>prompt</ErrorReport>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<OutputPath>$(SolutionDir)\$(Platform)\$(Configuration)\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+	</ItemGroup>
+</Project>
